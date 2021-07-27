@@ -1,4 +1,5 @@
 import os
+import sys
 import hashlib
 import csv
 
@@ -6,7 +7,7 @@ import csv
 class Parser:
     def __init__(
         self,
-        file = os.path.join(os.getcwd(), 'annual-enterprise-survey-2020-financial-year-provisional-csv.csv')
+        file = os.path.join(sys.path[0], 'annual-enterprise-survey-2020-financial-year-provisional-csv.csv')
         # file = os.path.join(os.getcwd(), 'testcase.csv')
     ) -> None:
         self.file = file
