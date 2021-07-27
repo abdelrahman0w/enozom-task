@@ -28,12 +28,12 @@ class Parser:
         return data
 
     @property
-    def concatenate(self):
+    def concatenate(self) -> str:
         column_names = list(self.__load_data)
         return "".join(self.__load_data.get(column_names[2])[0::2])
 
     @property
-    def hash_data(self):
+    def hash_data(self) -> str:
         return hashlib.md5(self.concatenate.encode()).hexdigest().upper()
 
 
