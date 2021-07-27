@@ -40,5 +40,5 @@ class Parser:
 
 # Driver Code
 parser = Parser()
-print(parser.concatenate)
+# print(parser.concatenate)
 print(parser.hash_data)
